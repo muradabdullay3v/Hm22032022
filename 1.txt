@@ -1,0 +1,22 @@
+using System;
+
+class H1 {
+    
+  static void Main() {
+    int[] nums = {1,5,7};
+    Adder(ref nums , 3);
+    foreach(var item in nums){
+          Console.WriteLine(item);
+      }
+  }
+  
+  static void Adder(ref int[] arr , int val){
+      int[] arr1 = new int[arr.Length+1];
+      for(int i = 0 ; i < arr.Length ; i++){
+          arr1[i] = arr[i];
+      }
+      arr1[arr1.Length-1] = val;
+      arr = arr1;
+  }
+  
+}

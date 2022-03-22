@@ -1,0 +1,19 @@
+using System;
+
+class H3 {
+    
+  static void Main() {
+    int num = 5;
+    YaxinKok(ref num);
+    Console.WriteLine(num);
+  }
+  
+  static void YaxinKok(ref int eded){
+      int pow = 0;
+      for(int i = 1 ; i*i <= eded ; i++){
+          pow++;
+      }
+      eded = pow;
+  }
+  
+}
